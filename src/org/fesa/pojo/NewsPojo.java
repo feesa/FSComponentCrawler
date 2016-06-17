@@ -6,6 +6,7 @@ public class NewsPojo {
 	private String time;
 	private String image;
 	private String title;
+	private String source;
 	private String url;
 	
 	public String getId() {
@@ -43,5 +44,11 @@ public class NewsPojo {
 	}
 	public void setUrl(String url) {
 		this.url = url;
+	}
+	public String getSource() {
+		return source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 }
