@@ -6,4 +6,5 @@ import org.fesa.pojo.UserPojo;
 public interface UserDao {
 
 	List<UserPojo> getAllUser();
+	
 }
