@@ -24,7 +24,7 @@
 	<context:property-placeholder location="/WEB-INF/config/jdbc.properties" />
 	<context:component-scan base-package="org.fesa.*" />
 	<mvc:annotation-driven />
-	<mvc:view-controller path="/" view-name="welcome/userLogin" />
+	<mvc:view-controller path="/" view-name="home/userLogin" />
 	<mvc:resources location="/scripts/" mapping="/scripts/**" />
     <!-- 配置视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

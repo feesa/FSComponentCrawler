@@ -12,17 +12,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-<h1>最新新闻</h1>
+<h1>用户列表</h1>
 <div id="d1"></div>
 <script type="text/javascript">
 	$(function(){
 		$.ajax({
 			type:'GET',
-			url:'news/getUsers',
+			url:'user/getUsers',
 			dataType:'json',
 			success:function(data){
 				$(data).each(function(i,item){
-					$("#d1").append("<span>"+item.firstName+","+item.lastName+"<span>");
+					$("#d1").append("<span>"+item.name+","+item.email+"<span>");
 				});
 			}
 		});

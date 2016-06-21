@@ -3,10 +3,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>html5</title>
+<title>FeSa</title>
 </head>
 <body>
-<h1>欢迎</h1>
-<a href="news/getNews">查看数据</a>
+<p style="vertical-align: center"><h1>欢迎</h1></p>
+<a href="user/userDisplay">查看用户</a>
 </body>
 </html>

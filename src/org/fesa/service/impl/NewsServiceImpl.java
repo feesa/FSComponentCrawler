@@ -3,13 +3,17 @@ package org.fesa.service.impl;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Map;
+
 import org.fesa.dao.NewsDao;
 import org.fesa.pojo.NewsPojo;
 import org.fesa.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.alibaba.fastjson.JSONObject;
 import com.wilddog.client.Wilddog;
 
+@Service
 public class NewsServiceImpl implements NewsService{
 
 	@Autowired
