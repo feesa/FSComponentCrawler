@@ -8,9 +8,11 @@ import javax.persistence.Table;
 @Entity
 @Table(name="tab_user",schema="public")
 public class UserPojo{
+	
 	private Integer id;
-	private String firstName;
-	private String lastName;
+	private String name;
+	private String passwd;
+	private String email;
 	
 	@Id
 	@Column(name="id",nullable=false)
@@ -20,18 +22,25 @@ public class UserPojo{
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	@Column(name="firstname",length=64)
-	public String getFirstName() {
-		return firstName;
+	@Column(name="name",length=64)
+	public String getName() {
+		return name;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setName(String name) {
+		this.name = name;
 	}
-	@Column(name="lastname",length=64)
-	public String getLastName() {
-		return lastName;
+	@Column(name="passwd",length=64)
+	public String getPasswd() {
+		return passwd;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setPasswd(String passwd) {
+		this.passwd = passwd;
+	}
+	@Column(name="email",length=64)
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 }
